@@ -25,6 +25,7 @@ h1{
     font-size: 3.5rem;
     font-weight: 800;
     text-align: center;
+    margin-top: 14rem;
 }
 
 h2 {
@@ -90,6 +91,7 @@ padding: 0 !important;}
     h1{
         font-size: 5.5rem;
         margin-top: 250px;
+        margin-top: 12rem;
     }
     h3{
         font-size: 2rem;
@@ -107,6 +109,7 @@ padding: 0 !important;}
 @media screen and (min-width: 1000px) {
     h1{
         font-size: 7rem;
+        margin-top: 10rem;
     }
     h2{
         font-size: 3rem;
