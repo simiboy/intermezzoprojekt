@@ -25,7 +25,8 @@ h1{
     font-size: 3.5rem;
     font-weight: 800;
     text-align: center;
-    margin-top: 14rem;
+    margin-top: 12rem;
+    line-height: 3.5rem;
 }
 
 h2 {
@@ -110,6 +111,7 @@ padding: 0 !important;}
     h1{
         font-size: 7rem;
         margin-top: 10rem;
+        line-height: unset;
     }
     h2{
         font-size: 3rem;
