@@ -36,8 +36,8 @@ h2 {
     position: sticky;
     background: inherit;
     top: 0;
-    margin: 0;
-    padding: 1rem 0;
+    margin: 0 0 1rem 0;
+    padding: 1rem 0 0.5rem 0;
 }
 
 h3{
@@ -46,13 +46,23 @@ h3{
     text-align: center;
 }
 
-p{
+p, ul{
     font-size: 1.2rem;
+}
+
+a {
+    color: black;
+    font-weight: 600;
+    text-decoration: none;
+}
+a:hover{
+    background: black;
+    color: white;
 }
 
 #arrow {
     border: solid black;
-    border-width: 0 1px 3px 0;
+    border-width: 0 1px 1px 0;
     display: none;
     padding: 20px;
     animation: blinker 1.5s linear infinite;
@@ -83,9 +93,10 @@ p{
 /* Section Colors */
 #intro { background: var(--green); 
 padding: 0 !important;}
-#description { background: var(--pink); }
-#about { background: var(--yellow); }
-#contact { background: var(--blue); }
+#mi_ez { background: var(--pink); }
+#rolunk { background: var(--yellow); }
+#hol { background: var(--blue); }
+#kontakt { background: var(--green);} 
 
 
 @media screen and (min-width: 600px) {
@@ -97,7 +108,7 @@ padding: 0 !important;}
     h3{
         font-size: 2rem;
     }
-    p{
+    p, ul{
         font-size: 1.4rem;
     }
     
@@ -114,13 +125,13 @@ padding: 0 !important;}
         line-height: unset;
     }
     h2{
-        font-size: 3rem;
-        padding: 2rem 0;
+        margin: 0 0 4rem 0;
+        padding: 2rem 0 1rem 0;
     }
     h3{
         font-size: 4rem;
     }
-    p{
+    p, ul{
         font-size: 1.6rem;
     }
     
@@ -128,21 +139,5 @@ padding: 0 !important;}
     .section {
         padding-left: 25%;
         padding-right: 25%;
-    }
-
-    h2::after{
-        content: "";
-        width: 200px;
-        height: 200px;
-        border: solid black;
-        border-width: 15px 0 0 5px;
-        position: absolute;
-        left: calc(-50% + 40px);
-        top: 40px;
-    }
-
-    #about h2::after{
-        border-width: 5px 15px 0 0 ;
-        left: calc(125% - 40px);
     }
 }
